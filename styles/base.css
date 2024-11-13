@@ -28,7 +28,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* header */
 header {
     display: flex;
@@ -80,6 +79,10 @@ nav ul li a {
     display: block;
     text-align: center;
     font-size: 1.5rem;
+}
+nav ul li a:hover {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
 }
 
 /* main */
