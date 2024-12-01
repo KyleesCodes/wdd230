@@ -2,16 +2,16 @@
 
     :root {
         --primary-color: #780116;
-        --secondary-color: #F7B538;
-        --accent1-color: #DB7C26;
+        --secondary-color: #F7C25A;
+        --accent1-color: #EFC59F;
         --accent2-color: #C32F27;
-    
+
         --base-font: 'Faculty Glyphic', serif;
-    
-        --nav-background-color: #C32F27;
-        --nav-link-color: #F7B538;
-        --nav-hover-link-color: #C32F27;
-        --nav-hover-background-color: #F7B538;
+
+        --nav-background-color: #53140E;
+        --nav-link-color: #F7C25A;
+        --nav-hover-link-color: #53140E;
+        --nav-hover-background-color: #F7C25A;
     }
         
     nav {
