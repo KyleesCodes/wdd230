@@ -34,7 +34,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-    color: black;
+    color: white;
     padding: 2.5rem 0;
     gap: 3rem;
 }
