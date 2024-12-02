@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+:root {
+    --primary-color: #780116;
+    --secondary-color: #F7C25A;
+    --accent1-color: #EFC59F;
+    --accent2-color: #C32F27;
+
+    --base-font: 'Faculty Glyphic', serif;
+
+    --nav-background-color: #53140E;
+    --nav-link-color: #F7C25A;
+    --nav-hover-link-color: #53140E;
+    --nav-hover-background-color: #F7C25A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--base-font);
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2.5rem 0;
+    gap: 3rem;
+}
+
+header img {
+    border-radius: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0.5rem;
+
+}
+
+header span {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+nav ul li a:hover {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+}
+
+/* main */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: left;
+
+}
+
+main h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: black;
+    text-align: left;
+    position: relative;
+
+}
+
+main h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.2rem;
+    height: 0.5px;
+    background-color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+/* cards */
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 0;
+    margin: 1rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: var(--accent1-color);
+    color: black;
+    padding: 0.5rem;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    text-align: left;
+}
+
+.card ul li {
+    color: black;
+    margin: 0.5rem 0;
+
+}
+
+.card p {
+    padding: 1rem;
+}
+
+/* footer */
+footer {
+    background-color: var(--nav-hover-background-color);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
